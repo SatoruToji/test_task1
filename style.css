@@ -1,0 +1,334 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #282829;
+    color: #ffffff;
+}
+
+header,
+footer {
+    width: 100%;
+    background-color: #222222;
+}
+
+header {
+    margin-bottom: 10vh;
+    background-color: #222222;
+    border-bottom: 1px solid black;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    padding: 17px 30px;
+    background-color: #ffffff;
+    color: #222222;
+    border: none;
+    border-radius: 2px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+a:hover {
+    color: #d5c9be;
+    text-decoration: underline;
+}
+
+.header__article {
+    display: flex;
+    justify-content: space-between;
+    height: 90vh;
+}
+
+.header__article img {
+    position: relative;
+    display: block;
+    height: 100%;
+}
+
+.header__article h1 {
+    font-size: 5rem;
+}
+
+.header__article-section {
+    margin-left: 10vw;
+}
+
+.header__article-nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3vh;
+    gap: 7em;
+}
+
+.header__article-div {
+    margin-top: 6em;
+}
+
+.header__article-description {
+    font-size: 3rem;
+}
+
+.header__article-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+    row-gap: 1em;
+}
+
+/* card info */
+.card__info {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: none;
+    margin-bottom: 10vh;
+    width: 100%;
+    height: 50%;
+    border-block: 1px solid black;
+    object-fit: cover;
+}
+
+.card__info-image {
+    width: 35vw;
+}
+
+.card__info-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 53px;
+}
+
+.card__info-li {
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 8px;
+}
+
+.card__info-li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 1%;
+    height: 2px;
+    width: 110%;
+    background: linear-gradient(to right, red, blue);
+    border-radius: 2px;
+}
+
+/* card input */
+.card__input {
+    margin-inline: auto;
+    margin-bottom: 10vh;
+    width: 80vw;
+    height: 70vh;
+    background-color: #ffffff;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.card__input-img {
+    transform: translateY(-100px);
+}
+
+.card__input-article {
+    padding-block: 3%;
+    padding-left: 7%;
+}
+
+.card__input-container {
+    display: flex;
+}
+
+.card__input-h2 {
+    padding-bottom: 0.8em;
+    color: #38535d;
+    font-size: 3em;
+}
+
+.card__input-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.625em;
+    max-width: 48em;
+    color: #282829;
+}
+
+.card__input-input {
+    width: 48em;
+    height: 4em;
+}
+
+.card__input-label {
+    margin-block: 0.5em;
+}
+
+.card__input-button {
+    width: 48em;
+    height: 5em;
+    background-color: #282829;
+    color: #fff;
+}
+
+/* footer */
+.footer__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5em;
+    width: 100%;
+    height: 10vh;
+    border-block: 2px solid #d5c9be;
+}
+
+.footer__ul {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding-inline: 10em 11em;
+    padding-block: 43px;
+    gap: 50px;
+    color: #d5c9be;
+}
+
+.footer li {
+    display: flex;
+    flex-direction: column;
+    /* align-items: baseline; */
+    gap: 0.5rem;
+}
+
+.footer__ul-social {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.footer__ul-button {
+    width: 11em;
+    height: 5em;
+}
+
+.footer__ul-p {
+    margin-top: 50px;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .header__article h1 {
+        font-size: 4rem;
+    }
+    .header__article-description {
+        font-size: 2rem;
+    }
+    .header__article-nav {
+        display: flex;
+        gap: 5em;
+    }
+
+    .card__info-image {
+        width: 30vw;
+        height: auto;
+    }
+}
+
+@media (max-width: 1100px) {
+    .header__article h1 {
+        font-size: 3em;
+    }
+    .header__article-description {
+        font-size: 1.5em;
+    }
+    .header__article-list {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2em;
+        row-gap: 1px;
+    }
+    .header__article-section {
+        margin-left: 5vw;
+    }
+    .direction-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card__info-li {
+        position: relative;
+        padding-bottom: 30px;
+        margin-bottom: 1px;
+    }
+    .card__info-p {
+        font-size: 0.8em;
+    }
+
+    .card__leftImg {
+        mask-image: linear-gradient(to left, transparent 0%, #282829 30%);
+    }
+
+    .card__rightImg {
+        mask-image: linear-gradient(to right, transparent 0%, #282829 30%);
+    }
+
+    .card__info-image {
+        width: 30vw;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .card__input {
+        margin-bottom: 50px;
+    }
+
+    .card__input-form {
+        max-width: 30em;
+    }
+    .card__input-input {
+        width: 30em;
+        height: 4em;
+    }
+    .card__input-button {
+        width: 30em;
+        height: 5em;
+        background-color: #282829;
+        color: #fff;
+    }
+
+    footer {
+        margin-top: 3em;
+    }
+}
+
+@media (max-width: 860px) {
+    .header__article h1 {
+        font-size: 2em;
+    }
+    .header__article-description {
+        font-size: 1em;
+    }
+}
