@@ -1,0 +1,38 @@
+.card__info {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: none;
+    margin-bottom: 10vh;
+    width: 100%;
+    height: 50%;
+    border-block: 1px solid black;
+    object-fit: cover;
+}
+
+.card__info-image {
+    width: 35vw;
+}
+
+.card__info-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 53px;
+}
+
+.card__info-li {
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 8px;
+}
+
+.card__info-li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 1%;
+    height: 2px;
+    width: 110%;
+    background: linear-gradient(to right, red, blue);
+    border-radius: 2px;
+}

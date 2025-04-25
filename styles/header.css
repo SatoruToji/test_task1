@@ -1,0 +1,41 @@
+.header__article {
+    display: flex;
+    justify-content: space-between;
+    height: 90vh;
+}
+
+.header__article img {
+    position: relative;
+    display: block;
+    height: 100%;
+}
+
+.header__article h1 {
+    font-size: 5rem;
+}
+
+.header__article-section {
+    margin-left: 10vw;
+}
+
+.header__article-nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3vh;
+    gap: 7em;
+}
+
+.header__article-div {
+    margin-top: 6em;
+}
+
+.header__article-description {
+    font-size: 3rem;
+}
+
+.header__article-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+    row-gap: 1em;
+}

@@ -1,0 +1,36 @@
+.card__input {
+    margin-inline: auto;
+    margin-bottom: 10vh;
+    width: 80vw;
+    height: 70vh;
+    background-color: #ffffff;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.card__input-img {
+    transform: translateY(-100px);
+}
+
+.card__input-article {
+    padding-block: 3%;
+    padding-left: 7%;
+}
+
+.card__input-container {
+    display: flex;
+}
+
+.card__input-h2 {
+    padding-bottom: 0.8em;
+    color: #38535d;
+    font-size: 3.4em;
+}
+
+.card__input-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.625em;
+    width: 48vw;
+    color: #282829;
+}
