@@ -8,6 +8,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    transition: all 0.3s ease;
 }
 
 html,
@@ -38,6 +39,7 @@ header {
 footer {
     display: flex;
     flex-direction: column;
+    margin-top: 10%;
 }
 
 ul {
@@ -49,12 +51,22 @@ li {
 }
 
 button {
-    /* padding: 17px 30px; */
+    padding: 0.7em 1.5em;
     background-color: #ffffff;
     color: #222222;
     border: none;
     border-radius: 2px;
+    font-size: 1.5em;
     cursor: pointer;
+    text-transform: uppercase;
+}
+
+button:hover:not([type='submit']) {
+    background-color: #d5c9be;
+}
+
+button[type='submit']:hover {
+    color: #d5c9be;
 }
 
 a {
@@ -66,18 +78,11 @@ a:hover {
     text-decoration: underline;
 }
 
-@media (max-width: 1200px) {
-    .header__article h1 {
-        font-size: 4rem;
-    }
-    .header__article-description {
-        font-size: 2rem;
-    }
-    .header__article-nav {
-        display: flex;
-        gap: 5em;
-    }
+.home {
+    font-size: 2.4em;
+}
 
+@media (max-width: 1200px) {
     .card__info-image {
         width: 30vw;
         height: auto;
@@ -93,7 +98,6 @@ a:hover {
     }
     .header__article-list {
         display: flex;
-        flex-direction: column;
         margin-bottom: 2em;
         row-gap: 1px;
     }
@@ -104,7 +108,6 @@ a:hover {
         display: flex;
         flex-direction: column;
     }
-
     .card__info-li {
         position: relative;
         padding-bottom: 30px;
@@ -113,31 +116,19 @@ a:hover {
     .card__info-p {
         font-size: 0.8em;
     }
-
     .card__leftImg {
         mask-image: linear-gradient(to left, transparent 0%, #282829 30%);
     }
-
     .card__rightImg {
         mask-image: linear-gradient(to right, transparent 0%, #282829 30%);
     }
-
     .card__info-image {
         width: 30vw;
         height: auto;
         object-fit: cover;
     }
-
-    .card__input {
-        margin-bottom: 50px;
-    }
-
     .card__input-form {
         max-width: 30em;
-    }
-
-    footer {
-        margin-top: 3em;
     }
 }
 
@@ -147,5 +138,17 @@ a:hover {
     }
     .header__article-description {
         font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    button[type="submit"] {
+        font-size: 1em;
+    }
+    .header__article-img {
+        display: none;
+    }
+    .card__info-image {
+        display: none;
     }
 }

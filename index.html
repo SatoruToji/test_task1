@@ -5,28 +5,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <link rel="stylesheet" href="style.css" />
-        <script src="main.js" defer></script>
+        <script src="./main.js" type="module" defer></script>
+        <script src="./scripts/anchor_link.js" type="module"></script>
     </head>
     <body>
         <header>
             <article class="header__article">
                 <section class="header__article-section">
                     <nav class="header__article-nav">
-                        <a href="/">LOREM</a>
-                        <ul class=" direction-column">
-                            <li>
+                        <a href="/" class="home">LOREM</a>
+                        <ul class="header__article-ul direction-column">
+                            <li class="header__article-item">
                                 <a href="">consectetur</a>
                             </li>
-                            <li>
+                            <li class="header__article-item">
                                 <a href="">sit amet</a>
                             </li>
-                            <li>
+                            <li class="header__article-item">
                                 <a href="">eiusmod tempor</a>
                             </li>
                         </ul>
                     </nav>
                     <div class="header__article-div">
-                        <h1>
+                        <h1 class="header__artcile-h1">
                             Lorem ipsum <br />
                             dolor sit amet
                         </h1>
@@ -38,7 +39,7 @@
                             <li>30%</li>
                             <li>17%</li>
                         </ul>
-                        <button>order</button>
+                        <button class="anchor_link">order</button>
                     </div>
                 </section>
                 <img src="images/1.png" alt="" class="header__article-img" />
@@ -74,14 +75,14 @@
                             sed do eiusmod tempor 
                         </p>
                     </li>
-                    <button class="card__info-button">order</button>
+                    <button class="anchor_link card__info-btn">order</button>
                 </ul>
                 <img src="images/3.jpg" alt="" class="card__info-image card__rightImg" />
             </div>
             <div class="card__input">
                 <article class="card__input-article card__input-container">
                     <div>
-                        <h2 class="card__input-h2">
+                        <h2 class="card__input-h2" id="user_data">
                         Consectetur <br />
                         sed do eiusmod 
                     </h2>
@@ -136,12 +137,12 @@
                 </ul>
             </nav>
             <ul class="footer__ul">
-                <li>
-                    <a href="/">LOREM</a>
+                <li class="order1">
+                    <a href="/" class="home">LOREM</a>
                     <p class="footer__ul-p">© 2024, Copyright.</p>
                 </li>
                 <li>
-                    <ul class="footer__ul-social">
+                    <ul class="footer__ul-social order2">
                         <li>
                             <a href="#">
                                 <img
@@ -193,8 +194,8 @@
                     </ul>
                     <p class="footer__ul-p">Privacy policy</p>
                 </li>
-                <li>
-                    <button class="footer__ul-button">ORDER</button>
+                <li class="order3">
+                    <button class="anchor_link">ORDER</button>
                     <p class="footer__ul-p">Terms of Use</p>
                 </li>
             </ul>

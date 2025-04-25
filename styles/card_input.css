@@ -1,6 +1,5 @@
 .card__input {
     margin-inline: auto;
-    margin-bottom: 10vh;
     width: 80vw;
     height: 70vh;
     background-color: #ffffff;
@@ -33,4 +32,25 @@
     row-gap: 0.625em;
     width: 48vw;
     color: #282829;
+}
+
+@media (max-width: 1100px) {
+}
+
+@media (max-width: 480px) {
+    .card__input {
+        display: flex;
+        justify-content: center;
+    }
+    .card__input-h2 {
+        padding-bottom: 0.8em;
+        color: #38535d;
+        font-size: 2em;
+    }
+    .card__input-img {
+        display: none;
+    }
+    .card__input-form {
+        row-gap: 2em;
+    }
 }
