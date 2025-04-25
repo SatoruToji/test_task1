@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="styles/inputs.css">
         <script src="main.js" defer></script>
     </head>
     <body>
@@ -102,13 +103,15 @@
                                 class="card__input-input"
                             />
 
-                            <label for="agree" class="card__input-label"
-                                ><input
+                            <span>
+                                <input
                                     type="checkbox"
                                     id="agree"
                                     name="Privacy policy"
-                                />I accept Privacy policy</label
-                            >
+                                />    
+                                <label for="agree" class="card__input-label">I accept Privacy policy</label>
+                            </span>
+
                             <button type="submit" class="card__input-button">
                                 submit form
                             </button>

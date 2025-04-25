@@ -1,0 +1,43 @@
+input[type='checkbox'] {
+    appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+    width: 2em;
+    height: 2em;
+    border: 1px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+input[type='checkbox']::before {
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 14px;
+    border-right: 3px solid #000;
+    border-bottom: 3px solid #000;
+    top: 2px;
+    left: 6px;
+    transform: scale(0) rotate(45deg);
+    transition: all 0.2s ease;
+}
+
+input[type='checkbox']:hover {
+    border: 1px solid darkgray;
+}
+
+input[type='checkbox']:checked::before {
+    transform: scale(1) rotate(45deg);
+}
+
+label[for='agree'] {
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s ease;
+}
+label[for='agree']:hover {
+    /* color: darkgrey; */
+    text-decoration: underline;
+}
