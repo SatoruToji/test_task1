@@ -57,6 +57,23 @@
 
 @media (max-width: 480px) {
     .card__info-ul {
+        display: block;
         text-align: center;
+    }
+    .card__info-li {
+        padding-bottom: 10%;
+        margin-bottom: 4%;
+    }
+    .card__info-btn {
+        margin-top: 5%;
+    }
+}
+@media (max-width: 360px) {
+    .card__info-ul {
+        text-align: center;
+        gap: 1%;
+    }
+    .card__info-btn {
+        margin-top: 2%;
     }
 }

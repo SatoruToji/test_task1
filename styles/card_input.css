@@ -38,6 +38,9 @@
 }
 
 @media (max-width: 480px) {
+    .card__input-h2 {
+        font-size: 3em;
+    }
     .card__input {
         display: flex;
         justify-content: center;
@@ -52,5 +55,15 @@
     }
     .card__input-form {
         row-gap: 2em;
+    }
+}
+
+@media (max-width: 360px) {
+    .card__input-form {
+        row-gap: 1em;
+        align-items: center;
+    }
+    .card__input-h2 {
+        font-size: 1.8em;
     }
 }
