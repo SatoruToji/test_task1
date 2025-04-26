@@ -10,8 +10,8 @@
     height: 100%;
 }
 
-.header__article-h1 {
-    font-size: 5rem;
+.header__artcile-h1 {
+    font-size: 3em;
 }
 
 .header__article-section {
@@ -19,11 +19,14 @@
 }
 
 .header__article-nav {
+    position: fixed;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     align-items: center;
-    margin-top: 3vh;
+    padding-left: 10%;
     column-gap: 9vw;
+    z-index: 10;
 }
 
 .header__article-ul {
@@ -36,7 +39,7 @@
 }
 
 .header__article-div {
-    margin-top: 4em;
+    margin-top: 20%;
 }
 
 .header__article-description {
@@ -51,8 +54,8 @@
 }
 
 @media (max-width) {
-    .header__article h1 {
-        font-size: 4rem;
+    .header__artcile-h1 {
+        font-size: 4em;
     }
     .header__article-description {
         font-size: 2rem;
